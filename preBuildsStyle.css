@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap");
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(11, 21, 48);
+  overflow: hidden;
+  font: 20px "Poppins", sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #f7f7f7;
+  color: rgb(0, 0, 0);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(73, 104, 192);
+  color: rgb(255, 255, 255);
+}
+
+.header {
+  text-align: center;
+  background-color: rgb(106, 124, 172);
+  padding: 10px;
+}
+
+#headreTitle {
+  font-family: "Jaro", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+}
+
+.colortext {
+  color: rgb(238, 164, 4);
+}
+
+/*-----------------------------------------*/
+
+
+.block{
+    display: flex;
+}
+
+.leftblock{
+    flex: 1;
+    padding: 20px;
+}
+.rightblock{
+    flex: 9;
+    padding: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.image-grid img {
+    width: 300px;
+    height: 200px;
+    height: auto;
+}
+
+*{
+    font-family: poppins;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------*/
+/* foooterrrrrrrr */
+
+/* REMOVE THIS, USE YOUR OWN  */
+
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: rgb(11, 21, 48);
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(245, 245, 245, 0.808);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer .col {
+    width: 50%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
