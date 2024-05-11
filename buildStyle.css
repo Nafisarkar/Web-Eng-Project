@@ -87,6 +87,23 @@ td button{
 td {
     font-size: 16px;
 }
+
+#total_box{
+  background-color: rgb(73, 104, 192);
+  color: white;
+  border-radius: 8px;
+  padding: 5px 5px;
+  padding-left: 20px;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  font: 15px 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
 /*-----------------------------------------*/
 /* foooterrrrrrrr */
 

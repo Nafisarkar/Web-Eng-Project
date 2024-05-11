@@ -50,27 +50,27 @@
 
 .block{
     display: flex;
+    flex-direction: column;
 }
 
-.leftblock{
+.rightblock{
     flex: 1;
     padding: 20px;
-}
-.rightblock{
-    flex: 9;
-    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-    margin-bottom: 20px;
 }
 
 .image-grid img {
     width: 300px;
     height: 200px;
+    margin-top: 20px;
     height: auto;
     box-shadow: 10px 10px 5px rgb(174, 194, 201);
 }

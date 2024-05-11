@@ -1,137 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="buildStyle.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="buildStyle.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <title>PC BUILER BD</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="topnav">
-        <a href="/Index.html">Home</a>
-        <a class="active" href="/Build.html">Build</a>
-        <a href="/PreBuilds.html">PreBuilds</a>
-        <a href="#products">Contact</a>
-        <a href="#about"> About</a>
-      </div>
-        <div class="header">
-            <h1 id="headreTitle">Choose Your <h class="colortext">Parts</h></h1>
+      <a href="/Index.html">Home</a>
+      <a class="active" href="/Build.html">Build</a>
+      <a href="/PreBuilds.html">PreBuilds</a>
+      <a href="/Guides.html">Guide</a>
+      <a href="/Products.html"> Products</a>
+    </div>
+    <div class="header">
+      <h1 id="headreTitle">Choose Your <h class="colortext">Parts</h></h1>
+    </div>
+
+    <table class="partslist c">
+      <tr class="titlesitemlist">
+        <td class="cell"><b>Components</b></td>
+        <td><b>Selection</b></td>
+        <td><b>Price ৳</b></td>
+      </tr>
+      <td colspan="3" class="divider">
+        <hr />
+      </td>
+      <tr>
+        <td id="cpuname">Cpu</td>
+        <td>
+          <a href="ProductPages/cpu.html"
+            ><button type="button">Choose A Cpu</button></a
+          >
+        </td>
+        <td id="cpuprice">0৳</td>
+      </tr>
+      <td colspan="3" class="divider">
+        <hr />
+      </td>
+      <tr>
+        <td id="cpucoolername">Cpu Cooler</td>
+        <td>
+          <a href="ProductPages/cpucooler.html"
+            ><button type="button">Choose A Cpu Cooler</button></a
+          >
+        </td>
+        <td id="cpucoolerprice">0৳</td>
+      </tr>
+      <td colspan="3" class="divider">
+        <hr />
+      </td>
+      <tr>
+        <td id="motherboardname">MotherBoard</td>
+        <td>
+          <a href="ProductPages/motherboard.html"
+            ><button type="button">Choose A MotherBoard</button></a
+          >
+        </td>
+        <td id="motherboardprice">0৳</td>
+      </tr>
+      <td colspan="3" class="divider">
+        <hr />
+      </td>
+      <tr>
+        <td id="memoryname">Memory</td>
+        <td>
+          <a href="ProductPages/memory.html"
+            ><button type="button">Choose A Memory</button></a
+          >
+        </td>
+        <td id="memoryprice">0৳</td>
+      </tr>
+      <td colspan="3" class="divider">
+        <hr />
+      </td>
+      <tr>
+        <td id="storagename">Storage</td>
+        <td>
+          <a href="ProductPages/storage.html"
+            ><button type="button">Choose A Storage</button></a
+          >
+        </td>
+        <td id="storageprice">0৳</td>
+      </tr>
+      <td colspan="3" class="divider">
+        <hr />
+      </td>
+      <tr>
+        <td id="gpuname">GPU</td>
+        <td>
+          <a href="ProductPages/videocard.html"
+            ><button type="button">Choose A GPU</button></a
+          >
+        </td>
+        <td id="gpuprice">0৳</td>
+      </tr>
+      <td colspan="3" class="divider">
+        <hr />
+      </td>
+      <tr>
+        <td id="casename">Case</td>
+        <td>
+          <a href="ProductPages/case.html"
+            ><button type="button">Choose A Case</button></a
+          >
+        </td>
+        <td id="caseprice">0৳</td>
+      </tr>
+      <td colspan="3" class="divider">
+        <hr />
+      </td>
+      <tr>
+        <td id="psuname">PowerSupply</td>
+        <td>
+          <a href="ProductPages/psu.html"
+            ><button type="button">Choose A Power Supply</button></a
+          >
+        </td>
+        <td id="psuprice">0৳</td>
+      </tr>
+      <td colspan="3" class="divider">
+        <hr />
+      </td>
+      <script src="Backend/build.js"></script>
+    </table>
+    <div id="total_box">
+      <h2 id="total_price">Total : </h2>
+    </div>
+
+    <!-- FOOTER START -->
+    <div class="footer">
+      <div class="contain">
+        <div class="col">
+          <h1>Company</h1>
+          <ul>
+            <li>Home</li>
+            <li>Build</li>
+            <li>PreBuilds</li>
+            <li>Social</li>
+          </ul>
         </div>
-       
-        <table class="partslist c">
-            <tr class="titlesitemlist">
-                <td class="cell" >Components</td>
-                <td >Selection</td>
-                <td >Price ৳</td>
-            </tr>
-            <td colspan="3" class="divider">
-                <hr />
-              </td>     
-            <tr >
-                <td>Cpu</td>
-                <td><button type="button">Choose A Cpu</button></td>
-                <td>0৳</td>
-            </tr>
-            <td colspan="3" class="divider">
-                <hr />
-              </td>
-            <tr >
-                <td>Cpu Cooler</td>
-                <td><button type="button">Choose A Cpu Cooler</button></td>
-                <td>0৳</td>
-            </tr>
-            <td colspan="3" class="divider">
-                <hr />
-              </td>
-            <tr >
-                <td>MotherBoard</td>
-                <td><button type="button">Choose A MotherBoard</button></td>
-                <td>0৳</td>
-            </tr>
-            <td colspan="3" class="divider">
-                <hr />
-              </td>
-            <tr >
-                <td>Memory</td>
-                <td><button type="button">Choose A Memory</button></td>
-                <td>0৳</td>
-            </tr>
-            <td colspan="3" class="divider">
-                <hr />
-              </td>
-            <tr >
-                <td>Storage</td>
-                <td><button type="button">Choose A Storage</button></td>
-                <td>0৳</td>
-            </tr>
-            <td colspan="3" class="divider">
-                <hr />
-              </td>
-            <tr >
-                <td>GPU</td>
-                <td><button type="button">Choose A GPU</button></td>
-                <td>0৳</td>
-            </tr>
-            <td colspan="3" class="divider">
-                <hr />
-              </td>
-            <tr >
-                <td>Case</td>
-                <td><button type="button">Choose A Case</button></td>
-                <td>0৳</td>
-            </tr>
-            <td colspan="3" class="divider">
-                <hr />
-              </td>
-            <tr >
-                <td>PowerSupply</td>
-                <td><button type="button">Choose A Power Supply</button></td>
-                <td>0৳</td>
-            </tr>
-            <td colspan="3" class="divider">
-                <hr />
-              </td>
-
-        </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- FOOTER START -->
-<div class="footer">
-    <div class="contain">
-    <div class="col">
-      <h1>Company</h1>
-      <ul>
-        <li>Home</li>
-        <li>Build</li>
-        <li>PreBuilds</li>
-        <li>Social</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h1>Products</h1>
-      <ul>
-        <li>Services</li>
-      </ul>
-    </div>
-    <!-- <div class="col">
+        <div class="col">
+          <h1>Products</h1>
+          <ul>
+            <li>Services</li>
+          </ul>
+        </div>
+        <!-- <div class="col">
       <h1>Accounts</h1>
       <ul>
         <li>About</li>
@@ -141,32 +162,49 @@
         <li>Get in touch</li>
       </ul>
     </div> -->
-    <div class="col">
-      <h1>Resources</h1>
-      <ul>
-        <li>Webmail</li>
-
-      </ul>
+        <div class="col">
+          <h1>Resources</h1>
+          <ul>
+            <li>Webmail</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Support</h1>
+          <ul>
+            <li>Contact us</li>
+            <li>Open ticket</li>
+          </ul>
+        </div>
+        <div class="col social">
+          <h1>Social</h1>
+          <ul>
+            <li>
+              <img
+                src="Images/SocialsIcons/facebook.png"
+                width="32"
+                style="width: 32px"
+              />
+            </li>
+            <li>
+              <img
+                src="Images/SocialsIcons/instagram.png"
+                width="32"
+                style="width: 32px"
+              />
+            </li>
+            <li>
+              <img
+                src="Images/SocialsIcons/linkedin.png"
+                width="32"
+                style="width: 32px"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
     </div>
-    <div class="col">
-      <h1>Support</h1>
-      <ul>
-        <li>Contact us</li>
-        <li>Open ticket</li>
-      </ul>
-    </div>
-    <div class="col social">
-      <h1>Social</h1>
-      <ul>
-        <li><img src="Images/SocialsIcons/facebook.png" width="32" style="width: 32px;"></li>
-        <li><img src="Images/SocialsIcons/instagram.png" width="32" style="width: 32px;"></li>
-        <li><img src="Images/SocialsIcons/linkedin.png" width="32" style="width: 32px;"></li>
-      </ul>
-    </div>
-  <div class="clearfix"></div>
-  </div>
-  div
-  </div>
-  <!-- END OF FOOTER -->
-</body>
+    <script src="Backend/build.js"></script>
+    <!-- END OF FOOTER -->
+  </body>
 </html>

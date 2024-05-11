@@ -47,59 +47,46 @@
 
 /*-----------------------------------------*/
 
-
-.block{
-    display: flex;
+.partslist {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font: 14px "Poppins", sans-serif;
 }
 
-.leftblock{
-    flex: 1;
-    padding: 20px;
-}
-.rightblock{
-    flex: 9;
-    padding: 20px;
+table.c {
+  table-layout: auto;
+  width: 100%;
 }
 
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    margin-bottom: 20px;
+.center_text {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.image-grid img {
-    width: 300px;
-    height: 200px;
-    height: auto;
-    box-shadow: 10px 10px 5px rgb(174, 194, 201);
-}
-
-*{
-    font-family: poppins;
+.cell {
+  height: 40px;
+  width: calc(100 / 3);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+td button{
+  background-color: rgb(73, 104, 192);
+  color: white;
+  border-radius: 8px;
+  padding: 5px 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  font: 15px 'Poppins', sans-serif;
+  font-weight: bold;
+}
+td {
+    font-size: 16px;
+}
 /*-----------------------------------------*/
 /* foooterrrrrrrr */
 
