@@ -15,12 +15,15 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  opacity: 0.9;
+  transition: 0.5s;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #f7f7f7;
   color: rgb(0, 0, 0);
+  opacity: 1;
 }
 
 /* Add a color to the active/current link */
@@ -70,8 +73,7 @@ table.c {
   width: calc(100 / 3);
 }
 
-
-td button{
+td button {
   background-color: rgb(73, 104, 192);
   color: white;
   border-radius: 8px;
@@ -81,11 +83,11 @@ td button{
   border: none;
   cursor: pointer;
   width: 40%;
-  font: 15px 'Poppins', sans-serif;
+  font: 15px "Poppins", sans-serif;
   font-weight: bold;
 }
 td {
-    font-size: 16px;
+  font-size: 16px;
 }
 /*-----------------------------------------*/
 /* foooterrrrrrrr */

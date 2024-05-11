@@ -51,7 +51,7 @@ window.addEventListener('load', function() {
     document.getElementById('psuname').textContent = powerSupplydataParts[0];
     document.getElementById('psuprice').textContent = powerSupplydataParts[1] + "৳";
 
-    var totalprice = parseInt(cpudataParts[1]) + parseInt(cpucoolerdataParts[1]) + parseInt(motherboarddataParts[1]) + parseInt(memorydataParts[1]) + parseInt(storagedataParts[1]) + parseInt(gpudataParts[1]) + parseInt(casedataParts[1]) + parseInt(powerSupplydataParts[1]);
+    var totalprice = parseInt(cpudataParts[1].replace(',','')) + parseInt(cpucoolerdataParts[1].replace(',','')) + parseInt(motherboarddataParts[1].replace(',','')) + parseInt(memorydataParts[1].replace(',','')) + parseInt(storagedataParts[1].replace(',','')) + parseInt(gpudataParts[1].replace(',','')) + parseInt(casedataParts[1].replace(',','')) + parseInt(powerSupplydataParts[1].replace(',',''));
 
-    document.getElementById('total_price').textContent = totalprice + "৳";
+    document.getElementById('total_price').textContent = " Total : " + totalprice + " ৳";
 }); 

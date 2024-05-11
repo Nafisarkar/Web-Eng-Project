@@ -22,7 +22,7 @@
             <div class="leftblock">
                 <h2>Filter</h2>
                 <div class="priceblock">
-                    <h4>Price - </h4>
+                    <h4 id="pricenumber">Price - </h4>
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                 </div>
                 <div class="featured">
@@ -53,32 +53,20 @@
             <div class="rightblock">
                 <h2>Completed Builds</h2>
                 <div class="image-grid">
-                    <img src="/Images/Prebuilds/img2.jpg" alt="Image 1">
-                    <img src="/Images/Prebuilds/img3.jpg" alt="Image 2">
-                    <img src="/Images/Prebuilds/img4.jpg" alt="Image 3">
-                    <img src="/Images/Prebuilds/img5.jpg" alt="Image 4">
-                    <img src="/Images/Prebuilds/img6.jpg" alt="Image 5">
-                    <img src="/Images/Prebuilds/img7.jpg" alt="Image 6">
-                    <img src="/Images/Prebuilds/img8.jpg" alt="Image 7">
-                    <img src="/Images/Prebuilds/img9.jpg" alt="Image 8">
-                    <img src="/Images/Prebuilds/img10.jpg" alt="Image 9">
-                    <img src="/Images/Prebuilds/img11.jpg" alt="Image 10">
-                    <img src="/Images/Prebuilds/img2.jpg" alt="Image 11">
+                    <img class="imgani" src="/Images/Prebuilds/img2.jpg" alt="Image 1">
+                    <img class="imgani" src="/Images/Prebuilds/img3.jpg" alt="Image 2">
+                    <img class="imgani" src="/Images/Prebuilds/img4.jpg" alt="Image 3">
+                    <img class="imgani" src="/Images/Prebuilds/img5.jpg" alt="Image 4">
+                    <img class="imgani" src="/Images/Prebuilds/img6.jpg" alt="Image 5">
+                    <img class="imgani" src="/Images/Prebuilds/img7.jpg" alt="Image 6">
+                    <img class="imgani" src="/Images/Prebuilds/img8.jpg" alt="Image 7">
+                    <img class="imgani" src="/Images/Prebuilds/img9.jpg" alt="Image 8">
+                    <img class="imgani" src="/Images/Prebuilds/img10.jpg" alt="Image 9">
+                    <img class="imgani" src="/Images/Prebuilds/img11.jpg" alt="Image 10">
+                    <img class="imgani" src="/Images/Prebuilds/img2.jpg" alt="Image 11">
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- FOOTER START -->
 <div class="footer">
     <div class="contain">
@@ -131,8 +119,16 @@
     </div>
   <div class="clearfix"></div>
   </div>
-  div
   </div>
   <!-- END OF FOOTER -->
+  <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("pricenumber");
+    output.innerHTML = "Price - " + slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = "Price - " + this.value + "000 Taka";
+    }
+  </script>
 </body>
 </html>
